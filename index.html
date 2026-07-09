@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alloffersanddeals | Special Limited-Time Deal</title>
+    <title>alloffersanddeals | Special Limited-Time Deals</title>
     <!-- Premium Google Fonts -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2 family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Link External CSS Sheet -->
     <link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 </head>
 <body>
 
@@ -115,7 +117,7 @@
                     </div>
                     <div class="info-block">
                         <h4>Contact Info</h4>
-                        <p><a href="tel:9997777000">999-7777-003</a></p>
+                        <p><a href="tel:9997777000">999-7777-004</a></p>
                     </div>
                     <div class="info-block">
                         <h4>Address</h4>
@@ -198,6 +200,32 @@
 	};
 </script>
 <script type='text/javascript' src='https://orgfarm-2ac52c9766-dev-ed.develop.my.site.com/ESWAgent1783542809447/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://orgfarm-2ac52c9766-dev-ed.develop.my.salesforce.com/embeddedservice/menu/fab.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		// Required if you want labels in a language that’s different from your user’s context.
+		//embedded_svc.menu.settings.language = ''; //For example, enter 'en' or 'en-US'
+		embedded_svc.menu.settings.scrt2BaseUrl = 'https://orgfarm-2ac52c9766-dev-ed.develop.my.salesforce-scrt.com';
 
+		embedded_svc.menu.init(
+			'https://orgfarm-2ac52c9766-dev-ed.develop.my.salesforce.com',
+			'https://d.la11-core1.sfdc-58ktaz.salesforceliveagent.com/chat',
+			gslbBaseURL,
+			'00DgL00000Q8tht',
+			'Messaging_Channel'
+		);
+	};
+
+	if (!window.embedded_svc || !window.embedded_svc.menu) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://orgfarm-2ac52c9766-dev-ed.develop.my.salesforce.com/embeddedservice/menu/fab.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://orgfarm-2ac52c9766-dev-ed.develop.my.salesforce.com');
+	}
+</script>
 </body>
 </html>
